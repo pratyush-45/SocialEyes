@@ -63,8 +63,8 @@ const server = app.listen(PORT, () => {
 const io = require("socket.io")(server, {
   pingTimeOut: 60000,
   cors: {
-    origin: "http://localhost:3000",
-    //origin: "frontend URL",
+    // origin: "http://localhost:3000",
+    origin: "https://socialeyes-69cw.onrender.com",
   },
 });
 

@@ -51,7 +51,7 @@ const SideDrawer = () => {
   const logoutHandler = () => {
     localStorage.removeItem("userInfo");
     refreshPage();
-    history.push("https://socialeyes-69cw.onrender.com/");
+    history.push("/");
   };
 
   const handleSearch = async () => {
