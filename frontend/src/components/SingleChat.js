@@ -61,7 +61,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
       };
 
       const { data } = await axios.get(
-        `/api/message/${selectedChat._id}`,
+        `https://socialeyes-server.onrender.com/api/message/${selectedChat._id}`,
         config
       );
       // console.log(data);

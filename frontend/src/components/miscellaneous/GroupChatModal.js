@@ -45,7 +45,10 @@ const GroupChatModal = ({ children }) => {
           Authorization: `Bearer ${user.token}`,
         },
       };
-      const { data } = await axios.get(`/api/user?search=${search}`, config);
+      const { data } = await axios.get(
+        `https://socialeyes-server.onrender.com/api/user?search=${search}`,
+        config
+      );
       // console.log(data);
       setLoading(false);
       setSearchResult(data);
